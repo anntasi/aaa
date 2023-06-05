@@ -24,7 +24,7 @@ $(function () {
 		);
 	}
 	
-	//$("#citySelect").on("change", loadServerData);
+	$("#citySelect").on("change", loadServerData);
 	$("#daysSelect").on("change", loadServerData);
 	$("[type = 'checkbox']").on("change",updateProgress);//任何checkbox有change就呼叫updateprogress
 });
@@ -102,7 +102,7 @@ function loadServerData() {
 				{	//deletee();
 					addelement("雨傘");}
 			else{
-				   // deletee();
+				   //deletee();
 					addelement("防曬");}
 
 		})
@@ -131,7 +131,7 @@ function addelement(thing)
     label.appendChild(document.createTextNode(thing));
    container.appendChild(newbox);
    container.appendChild(label);
-   container.appendChild(br)
+   container.appendChild("br")
    console.log("add");
 }
 function deletee()
